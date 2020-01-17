@@ -64,6 +64,14 @@ body{
 		transform: translate(-50%,-50%) rotate(-15deg);
 	}
 }
+@keyframes preload{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
 .Congratulations .gif{
 	position: absolute;
 	opacity: 0;

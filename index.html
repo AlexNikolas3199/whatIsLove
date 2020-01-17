@@ -12,6 +12,10 @@
         .preloader_bg { position: fixed; background: rgba(15,15,15,1); width: 100%; height: 100%; top: 0; left: 0; z-index: 200; }
         .preloader_content { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 201; font-size: 14px; }
         .preloader_content span { display: block; margin: auto; text-align: center; text-transform: uppercase; color: rgba(225,225,225,1);}
+        .preloader_content span img{
+			width: 100px;border-radius: 50%;
+			animation: preload infinite linear 0.8s;
+        }
     </style>
     <script type="text/javascript">
     $(function(){
@@ -24,7 +28,7 @@
     </script>
     <div class="preloader_bg"></div>
     <div class="preloader_content">
-        <span><img style="width: 100px;border-radius: 50%" src="meme.png" alt=""></span>
+        <span><img src="meme.png" alt=""></span>
     </div>
     <noscript>
         <style>
