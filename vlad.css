@@ -1,6 +1,7 @@
 body{
 	margin: 0;
-	padding: 0
+	padding: 0;
+	font-family: sans-serif;
 }
 .Congratulations{
 	position: relative;
@@ -15,14 +16,52 @@ body{
 }
 .Congratulations h1{
 	color: #fff;
-	font-family: sans-serif;
 	font-size: 50px
 }
 .Congratulations .mainimg{
 	border:outset red 3px;
 }
 .animate1{
-	animation:animate1 1s forwards  ease-in-out 
+    animation:animate1 1s forwards ease-in-out 
+}
+.Congratulations .gif{
+    position: absolute;
+    opacity: 0;
+}
+.Congratulations .gif-1{
+    top:10%;
+    left:5%;
+    width:300px;
+    animation:animate2 0.5s forwards  ease-in-out;
+    animation-delay: 1s 
+}
+.Congratulations .gif-2{
+    bottom:10%;
+    left:5%;
+    width: 270px;
+    animation:animate2 0.5s forwards  ease-in-out;
+    animation-delay: 1s 
+}
+.Congratulations .gif-3{
+    top:10%;
+    right:5%;
+    width: 220px;
+    animation:animate3 0.5s forwards  ease-in-out;
+    animation-delay: 1s
+}
+.Congratulations .gif-4{
+    bottom:10%;
+    right:5%;
+    width: 220px;
+    animation:animate3 0.5s forwards  ease-in-out;
+    animation-delay: 1s
+}
+.Congratulations .gif-5{
+    top:50%;
+    left:50%;
+    width: 220px;
+    animation:animate4 0.5s forwards  ease-in-out;
+    animation-delay: 1s
 }
 @keyframes animate1{
 	0%{
@@ -71,43 +110,6 @@ body{
 	100%{
 		transform:rotate(360deg);
 	}
-}
-.Congratulations .gif{
-	position: absolute;
-	opacity: 0;
-	animation:animate2 0.5s forwards  ease-in-out;
-	animation-delay: 1s
-}
-.Congratulations .gif-1{
-	top:10%;
-	left:5%;
-	width:300px
-}
-.Congratulations .gif-2{
-	bottom:10%;
-	left:5%;
-	width: 270px;
-}
-.Congratulations .gif-3{
-	top:10%;
-	right:5%;
-	width: 220px;
-	animation:animate3 0.5s forwards  ease-in-out;
-	animation-delay: 1s
-}
-.Congratulations .gif-4{
-	bottom:10%;
-	right:5%;
-	width: 220px;
-	animation:animate3 0.5s forwards  ease-in-out;
-	animation-delay: 1s
-}
-.Congratulations .gif-5{
-	top:50%;
-	left:50%;
-	width: 220px;
-	animation:animate4 0.5s forwards  ease-in-out;
-	animation-delay: 1s
 }
 @media screen and (max-width: 700px){
 	.mainimg{
